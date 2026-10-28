@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TugasKu - Pengingat Tugas Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Tugas<span>Ku.</span></div>
+        <p>Pengingat Tugas Sekolah</p>
+    </header>
+
+    <!-- KONTEN UTAMA -->
+    <main class="container">
+
+        <!-- SAPAAN -->
+        <section class="welcome">
+            <h1>Halo, Sobat Pelajar! 👋</h1>
+            <p>
+                Jangan lupa selesaikan tugasmu tepat waktu.
+                Yuk, atur semua tugas sekolahmu di sini!
+            </p>
+        </section>
+<!-- KARTU MOTIVASI -->
+<section class="motivasi-card">
+    <div class="motivasi-icon">🌟</div>
+    <div class="motivasi-teks">
+        <p class="motivasi-label">MOTIVASI HARI INI</p>
+        <h2 id="judulMotivasi">Langkah kecil, hasil besar!</h2>
+        <p id="isiMotivasi">
+            Selesaikan satu tugas hari ini untuk mendekati tujuanmu.
+        </p>
+    </div>
+</section>
+<!-- STATISTIK TUGAS -->
+<section class="stats">
+    <div class="stat-card stat-total">
+        <div class="stat-icon">📚</div>
+        <p>Total Tugas</p>
+        <h2 id="totalTugas">0</h2>
+        <span>Semua tugasmu</span>
+    </div>
+
+    <div class="stat-card stat-selesai">
+        <div class="stat-icon">✅</div>
+        <p>Tugas Selesai</p>
+        <h2 id="tugasSelesai">0</h2>
+        <span>Hebat, teruskan!</span>
+    </div>
+
+    <div class="stat-card stat-belum">
+        <div class="stat-icon">📝</div>
+        <p>Belum Selesai</p>
+        <h2 id="tugasBelum">0</h2>
+        <span>Ayo selesaikan!</span>
+    </div>
+</section>
+
+
+        
+        <!-- FORM TAMBAH TUGAS -->
+        <section class="form-section">
+
+            <div class="section-heading">
+                <h2>Tambah Tugas Baru</h2>
+                <p>Catat tugas sekolahmu agar tidak terlupakan.</p>
+            </div>
+
+            <form id="formTugas">
+
+                <div class="form-group">
+                    <label for="namaTugas">Nama Tugas</label>
+                    <input
+                        type="text"
+                        id="namaTugas"
+                        placeholder="Contoh: Membuat makalah"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="mataPelajaran">Mata Pelajaran</label>
+                    <input
+                        type="text"
+                        id="mataPelajaran"
+                        placeholder="Contoh: Bahasa Indonesia"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggalTugas">Tanggal Pengumpulan</label>
+                    <input
+                        type="date"
+                        id="tanggalTugas"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="deskripsiTugas">Deskripsi Tugas</label>
+                    <textarea
+                        id="deskripsiTugas"
+                        placeholder="Tuliskan detail tugasmu..."
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="btn-tambah">
+                    + Tambahkan Tugas
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- PENCARIAN DAN FILTER TUGAS -->
+        <section class="form-section">
+            <div class="section-heading">
+                <h2>Cari Tugas</h2>
+                <p>Temukan tugas berdasarkan nama atau mata pelajaran.</p>
+            </div>
+
+            <div class="form-group">
+            <label for="cariTugas">Pencarian Tugas</label>
+                <input
+                    type="text"
+                    id="cariTugas"
+                    placeholder="Cari tugas sekolah..."
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="filterTugas">Filter status</label>
+                <select id="filterTugas">
+                    <option value="semua">Semua Tugas</option>
+                    <option value="belum">Belum Selesai</option>
+                    <option value="selesai">Sudah Selesai</option>
+                </select>
+            </div>
+            
+<div class="form-group">
+    <label for="urutTugas">Urutkan Tugas</label>
+    <select id="urutTugas">
+        <option value="terbaru">Tanggal Terdekat</option>
+        <option value="terlama">Tanggal Terjauh</option>
+    </select>
+</div>
+
+        </section>
+
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
